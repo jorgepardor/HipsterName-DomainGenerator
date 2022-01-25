@@ -1,26 +1,28 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+/* Determino el alto de la pagina como el 100% del espacio en pantalla */
 body,
 html {
   height: vh-100;
 }
 
+/* Asigno la imagen de fondo y le doy unos atributos para que se centre y ocupe todo el espacio deseado */
+
 .bg {
-  /* The image used */
   background-image: url("/src/assets/img/background.png");
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Decidí cambiar el color de text-info, para que fuese un amarillo diferente */
+
 .text-info {
   color: #eeca3f !important;
 }
+
+/* Cree dos clases y modifiqué primary para definir tamaños de fuente y colores que necesitaba en la maquetación */
 
 .display-6 {
   font-size: 0.9em;
@@ -30,14 +32,16 @@ html {
   font-size: 1em;
 }
 
+.text-primary {
+  color: rgba(51, 8, 103, 0.8) !important;
+}
+
+/* Defino el degradado que uso en el fondo de la columna principal */
+
 .gradient-custom {
   background: linear-gradient(
     to bottom,
     rgba(48, 207, 208, 0.9),
     rgba(51, 8, 103, 0.9)
   );
-}
-
-.text-primary {
-  color: rgba(51, 8, 103, 0.8) !important;
 }

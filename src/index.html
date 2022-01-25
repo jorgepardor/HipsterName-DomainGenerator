@@ -17,9 +17,16 @@
     <link rel="icon" type="image/x-icon" href="/src/assets/img/favicon.ico" />
   </head>
   <body>
+    <!-- Establezco un fondo, con propiedades definidas en el styles.css -->
     <div class="bg">
+      <!-- Creo un container para que la maquetación de la página se mantenga a un ancho fijo -->
+
       <div class="container gradient-custom">
+        <!-- Hago una fila que ocupe el 100% de lo que admita el container y le establezco que los elementos contenidos en ella deben estar centrados -->
+
         <div class="row align-items-center" style="min-height: 100vh">
+          <!-- Creo una columna que ocupe todo el ancho de la fila con los textos centrados -->
+
           <div class="col-sm-12 text-center">
             <p class="display-4 text-info pt-10">
               <i class="fas fa-robot text-primary"></i>
@@ -42,6 +49,9 @@
               following:
             </h2>
           </div>
+
+          <!-- Importo a través de js el contenido del resultado de la operación  -->
+
           <div class="col-sm-6 text-center p-0">
             <h6 class="text-info lead lh-lg" id="hipsterName"></h6>
           </div>

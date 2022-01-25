@@ -2,7 +2,9 @@ import "bootstrap";
 // import { formatWithCursor } from "prettier";
 import "./style.css";
 
+// Especifico que las funciones se carguen al entrar en la página
 window.onload = function() {
+  // Establezco cuatro arrays con varios elementos, a partir de los cuales va a generar un aleatorio para crear los dominios web
   let firstPart = [
     "the",
     "our",
@@ -62,10 +64,14 @@ window.onload = function() {
     ".dentist"
   ];
 
+  // Creo cuatro arrays vacios que van a recibir los elementos aleatorios para generar los dominios
+
   let pronoun = [];
   let adj = [];
   let noun = [];
   let domains = [];
+
+  // Con esta funcion relleno aleatoriamente los arrays a partir de toda la información que tengo de partida
 
   function getRandom(array, newArray) {
     let randomIndex = Math.floor(Math.random() * array.length);
@@ -78,6 +84,8 @@ window.onload = function() {
     getRandom(thirdPart, noun);
     getRandom(fourthPart, domains);
   }
+
+  // Con esta funcion genero todas las combinaciones posibles entre los elementos del array
 
   function getName() {
     let resultado = [];
@@ -103,6 +111,8 @@ window.onload = function() {
   }
 
   let resultado = getName();
+
+  // A partir de aquí divido en dos el array resultante, para representarlo en dos columnas en la web.
 
   const half = Math.ceil(resultado.length / 2);
 
