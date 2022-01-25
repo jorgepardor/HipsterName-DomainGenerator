@@ -1,1 +1,43 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body,
+html {
+  height: vh-100;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/src/assets/img/background.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-info {
+  color: #eeca3f !important;
+}
+
+.display-6 {
+  font-size: 0.9em;
+}
+
+.display-7 {
+  font-size: 1em;
+}
+
+.gradient-custom {
+  background: linear-gradient(
+    to bottom,
+    rgba(48, 207, 208, 0.9),
+    rgba(51, 8, 103, 0.9)
+  );
+}
+
+.text-primary {
+  color: rgba(51, 8, 103, 0.8) !important;
+}
